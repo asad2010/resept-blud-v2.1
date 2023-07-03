@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 module.exports = async function(){
     try {
-        await mongoose.connect("mongodb+srv://akramovasadbek:Flatron1948@cluster0.hpbzr56.mongodb.net/resept-blud", {
+        await mongoose.connect(process.env.DB, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             family: 4
